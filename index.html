@@ -232,107 +232,6 @@ header {
   </a>
 </div>
 
-<section id="kandidater" style="padding: 4rem 1rem; background-color: white;">
-  <h2 class="section-title" style="text-align:center; margin-bottom: 2rem;">Kandidater</h2>
-
-  <style>
-    /* Scoped styles just for this section */
-    #kandidater .image-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      justify-items: center;
-    }
-    #kandidater .image-item {
-      text-align: center;
-      max-width: 300px;
-    }
-    #kandidater .image-item img {
-      width: 150px;
-      height: auto;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: transform .15s ease;
-    }
-    #kandidater .image-item img:hover {
-      transform: scale(1.03);
-    }
-    #kandidater .name-tag {
-      margin: .5rem 0 0;
-      font-size: 1rem;
-      font-weight: 600;
-    }
-    #kandidater .image-text {
-    grid-column: 1 / -1;   /* makes it stretch across all columns */
-    width: 100%;
-    max-width: 700px;      /* now this will take effect */
-    margin: 1rem auto 0;   /* center it */
-    }
-  </style>
-
-  <div class="image-gallery">
-    <!-- 1: Brian -->
-    <div class="image-item">
-      <img src="" alt="Claus" onclick="toggleText('txt1')" />
-      <div class="name-tag">Claus Carlsen</div>
-      <div id="txt1" class="image-text"></div>
-    </div>
-
-    <!-- 2: Jan -->
-    <div class="image-item">
-      <img src="" alt="" onclick="toggleText('txt2')" />
-      <div class="name-tag">navn</div>
-      <div id="txt2" class="image-text"></div>
-    </div>
-
-    <!-- 3: Rosa -->
-    <div class="image-item">
-      <img src="3. Rosa.png" alt="Rosa" onclick="toggleText('txt3')" />
-      <div class="name-tag">Rosa Mørch Jørgensen</div>
-      <div id="txt3" class="image-text">Jeg er studerende, bor i Sydhavnen og er tovholder i Fredsinitiativet. Mit politiske engagement og København betyder enormtmeget for mig, ikke mindst de grønne områder og forskelligheden mellem bydelene, som giver hver del af byen sin egen stemning. Jeg stiller op til kommunalvalget, fordi jeg ønsker et mere solidarisk København med billigere boliger og bedre byliv. Som ung kandidat ønsker jeg at skabe håb for at en mere retfærdig og solidarisk kommune er mulig.</div>
-    </div>
-
-    <!-- 4: Rune -->
-    <div class="image-item">
-      <img src="4. Rune.png" alt="Rune" onclick="toggleText('txt4')" />
-      <div class="name-tag">Rune Jørgensen</div>
-      <div id="txt4" class="image-text">Jeg er aktiv i Palæstina-solidaritetsarbejdet og har i flere år organiseret møder, demonstrationer og kampagner for international retfærdighed. For mig hænger kampen mod undertrykkelse ude i verden sammen med kampen for et retfærdigt København. Jeg stiller op til kommunalvalget, fordi jeg vil være med til at skabe en by, hvor solidaritet, demokrati og fællesskab går forud for profit og kortsigtede interesser.</div>
-    </div>
-
-    <!-- 5: Kris -->
-    <div class="image-item">
-      <img src="" alt="" onclick="toggleText('txt5')" />
-      <div class="name-tag">navn</div>
-      <div id="txt5" class="image-text"></div>
-    </div>
-
-    <!-- 6: Hans -->
-    <div class="image-item">
-      <img src="" alt="" onclick="toggleText('txt6')" />
-      <div class="name-tag">navn</div>
-      <div id="txt6" class="image-text"></div>
-    </div>
-
-
-  <script>
-    function toggleText(id) {
-      const boxes = document.querySelectorAll('#kandidater .image-text');
-      const clicked = document.getElementById(id);
-      const isOpen = clicked && clicked.style.display !== 'none';
-
-      // Close all boxes
-      boxes.forEach(el => { el.style.display = 'none'; });
-
-      // If the clicked one wasn't open, open it
-      if (clicked && !isOpen) {
-        clicked.style.display = 'block';
-      }
-    }
-  </script>
-</section>
-
     <div class="parallax">
     <section id="reklame">
       <h2 class="section-title">Reklame</h2>
@@ -347,4 +246,5 @@ Har du spørgsmål til finansiering eller indhold, kan du kontakte os på: kbh@k
   </footer>
 
 </body>
+
 </html>
